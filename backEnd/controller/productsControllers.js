@@ -19,4 +19,7 @@ const getProductId = async (req, res) => {
   }
 };
 
-module.exports = { getAllProducts, getProductId };
+module.exports = {
+  getAllProducts,
+  getProductId,
+};

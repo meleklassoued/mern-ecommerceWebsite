@@ -1,15 +1,21 @@
 /* -------------------------------------------------------------------------- */
 /*                              import constants                              */
 /* -------------------------------------------------------------------------- */
-const { Router } = require("express");
-const router = Router();
-const {getAllProducts,getProductId} = require('../controller/productsControllers')
-// desc get all products from DB
-// route Get/api/products/:id
+const express = require("express");
+const router = express.Router();
+const {
+  getAllProducts,
+  getProductId,
+} = require("../controller/productsControllers");
+
+// @desc Get all products from db
+//@route get /api.products
+//@access Public
 router.get("/", getAllProducts);
 
-// desc get all products from DB
-// route Get/api/products/:id
+// @desc Get all products from db
+//@route get /api.products
+//@access Public
 router.get("/:id", getProductId);
 
-module.export = router;
+module.exports = router;
