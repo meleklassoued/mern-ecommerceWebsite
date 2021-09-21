@@ -10,10 +10,12 @@ const Navbar = () => {
       {/* links */}
       <ul className='navbar_links'>
         <li>
-          <Link to='/cart'>
+          <Link to='/cart' className='cart__link'>
             <i className='fas fa-shopping-cart'></i>
-            cart
-            <span className='cartlogo__badge'>0</span>
+            <span>
+              cart
+              <span className='cartlogo__badge'>0</span>
+            </span>
           </Link>
         </li>
         <li>
@@ -21,7 +23,7 @@ const Navbar = () => {
         </li>
       </ul>
       {/* hamburger menu */}
-      <div className='humberger__menu'>
+      <div className='hamburger__menu'>
         <div></div>
         <div></div>
         <div></div>
