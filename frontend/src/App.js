@@ -8,13 +8,15 @@ import CartScreen from "./screens/CartScreen";
 /* ------------------------------- End screens ------------------------------ */
 // components:
 import Navbar from "./components/Navbar";
+import Backdrop from "./components/Backdrop";
+import SideDrawer from "./components/sideDrawer";
 function App() {
   return (
     <Router>
       <div className='app'>
         <Navbar />
-        {/* side Drawer  */}
-        {/* backdrop */}
+        <SideDrawer></SideDrawer>
+        <Backdrop></Backdrop>
         <main>
           <Switch>
             <Route exact path='/' component={HomeScreen}></Route>
