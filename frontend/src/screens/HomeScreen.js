@@ -6,6 +6,12 @@ function HomeScreen() {
       <h2 className='homescreen__title'>Latest products </h2>
       <div className='homescreen__products'>
         <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
       </div>
     </div>
   );
