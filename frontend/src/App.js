@@ -23,7 +23,7 @@ function App() {
         <main>
           <Switch>
             <Route exact path='/' component={HomeScreen}></Route>
-            <Route exact path='/product:id' component={ProductScreen}></Route>
+            <Route exact path='/product/:id' component={ProductScreen}></Route>
             <Route exact path='/cart' component={CartScreen}></Route>
             <Route></Route>
           </Switch>
