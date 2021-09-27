@@ -12,7 +12,7 @@ const getAllProducts = async (req, res) => {
 
 const getProductId = async (req, res) => {
   try {
-    const product = await Product.find(req.params.id);
+    const product = await Product.findById(req.params.id);
     res.json(product);
   } catch (err) {
     res.status(500).json({ message: "server err" });
