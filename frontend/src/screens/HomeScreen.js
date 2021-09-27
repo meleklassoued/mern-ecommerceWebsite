@@ -8,15 +8,16 @@ import { getProducts as listProducts } from "../Redux/actions/productActions";
 function HomeScreen() {
   const dispatch = useDispatch();
   const getProducts = useSelector((state) => state.getProducts);
+  console.log(getProducts);
   const { products, loading, error } = getProducts;
 
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);
   return (
-    <div className="homescreen">
-      <h2 className="homescreen__title">Latest Products</h2>
-      <div className="homescreen__products">
+    <div className='homescreen'>
+      <h2 className='homescreen__title'>Latest Products</h2>
+      <div className='homescreen__products'>
         {loading ? (
           <h2>Loading...</h2>
         ) : error ? (
@@ -36,8 +37,6 @@ function HomeScreen() {
       </div>
     </div>
   );
-};
-  
-
+}
 
 export default HomeScreen;
