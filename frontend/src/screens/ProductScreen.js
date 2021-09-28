@@ -18,6 +18,8 @@ const ProductScreen = ({ match, history }) => {
       dispatch(getProductDetails(match.params.id));
     }
   }, [dispatch, product, match]);
+
+  // add the product to the cart 
   const addToCartHandler = () => {
     dispatch(addToCart(product._id, qty));
     history.push(`/cart`);
