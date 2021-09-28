@@ -31,7 +31,7 @@ const Cartscreen = () => {
   return (
     <div className='cartScreen'>
       <div className='cartscreen__left'>
-        <h2>shooping cart</h2>
+        <h2 className="shopping_cart_message">shooping cart</h2>
         {cartItems.length === 0 ? (
           <div>
             Your Cart is emty <Link to='/'>Go There</Link>

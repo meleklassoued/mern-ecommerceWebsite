@@ -37,6 +37,10 @@
 
 }
 
+.shopping_cart_message {
+    margin: 40px;
+}
+
 .cartscreen__right div button {
     padding: 10px 17px;
     width: 100%;
@@ -61,10 +65,23 @@
         max-width: 800px;
         flex-direction: column;
     }
-    .cartscreen__left{
+
+    .cartscreen__left {
         margin: 0;
     }
+
     .cartscreen__right {
         margin: 1rem;
     }
-} 
+
+    .shopping_cart_message {
+        display: block;
+        text-align: center;
+        margin: 1rem;
+        font-size: 2rem;
+        font-style: italic;
+        text-transform: capitalize;
+        color: white;
+        ;
+    }
+}

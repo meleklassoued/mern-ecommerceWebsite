@@ -27,7 +27,16 @@ const ProductScreen = ({ match, history }) => {
   return (
     <div className='productscreen'>
       {loading ? (
-        <h2>loading...</h2>
+        <div class='main-circle rotate'>
+          <div class='second-circle rotate'>
+            <div class='circle big' id='circle-1'></div>
+            <div class='two-circle'>
+              <div class='circle big' id='circle-2'></div>
+              <div></div>
+              <div class='circle big' id='circle-3'></div>
+            </div>
+          </div>
+        </div>
       ) : error ? (
         <h2>{error}</h2>
       ) : (
@@ -64,7 +73,9 @@ const ProductScreen = ({ match, history }) => {
                 </select>
               </p>
               <p>
-                <button type='button' onClick={addToCartHandler}>Add To card</button>
+                <button type='button' onClick={addToCartHandler}>
+                  Add To card
+                </button>
               </p>
             </div>
           </div>
