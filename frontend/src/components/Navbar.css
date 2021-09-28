@@ -9,10 +9,12 @@
     z-index: 50;
 }
 
-.navbar__Logo h2 {
+.navbar__Logo .link  {
     color: rgba(0, 0, 0, 0.808);
-    font-size: 1.2rem;
+    font-size: 1.rem;
     cursor: pointer;
+    text-decoration: none;
+    
 }
 
 
@@ -110,6 +112,3 @@
     }
 
 }
-
-
-
